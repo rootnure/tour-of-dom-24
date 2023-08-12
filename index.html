@@ -60,6 +60,12 @@
 
     <script src="./js/index.js"></script>
     <script>
+        // getElementsByClassName
+        const places = document.getElementsByClassName('visited');
+        for(const place of places) {
+            console.log(place.innerText)
+        }
+
         // getElementById
         const fruitsTitle = document.getElementById('fruits-title');
         fruitsTitle.innerText = 'Fruits Title Changed by JS';
