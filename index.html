@@ -17,6 +17,13 @@
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
+        <ul>
+            <li>Another List Item 1</li>
+            <li>Another List Item 2</li>
+            <li>Another List Item 3</li>
+            <li>Another List Item 4</li>
+            <li>Another List Item 5</li>
+        </ul>
     </main>
     <footer>
 
@@ -24,7 +31,15 @@
 
     <script src="./js/index.js"></script>
     <script>
-        console.log('adding JS inside the html file')
+        const liCollections = document.getElementsByTagName('li');
+        for(const li of liCollections) {
+            console.log(li.innerText);
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            console.log(h1.innerText);
+        }
     </script>
 </body>
 </html>
