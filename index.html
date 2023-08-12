@@ -6,7 +6,7 @@
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="./styles/style.css">
     <style>
-        li {
+        .fruits-container li {
             color: tomato;
         }
         #fruits-title {
@@ -34,7 +34,7 @@
                 <li>Touhid</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">Fruits I like</h1>
             <ul>
                 <li>Mango</li>
@@ -60,21 +60,29 @@
 
     <script src="./js/index.js"></script>
     <script>
-        // getElementsByClassName
+        // option-5: querySelector
+        const singleLi = document.querySelector('.fruits-container li');
+        console.log(singleLi);
+
+        // option-4: querySelectorAll
+        const someLi = document.querySelectorAll('.fruits-container li');
+        console.log(someLi);
+
+        // option-3: getElementsByClassName
         const places = document.getElementsByClassName('visited');
         for(const place of places) {
-            console.log(place.innerText)
+            // console.log(place.innerText)
         }
 
-        // getElementById
+        // option-2: getElementById
         const fruitsTitle = document.getElementById('fruits-title');
         fruitsTitle.innerText = 'Fruits Title Changed by JS';
 
-        // getElementsByTagName
+        // option-1: getElementsByTagName
         const liCollections = document.getElementsByTagName('li');
         for(const li of liCollections) {
             // console.log(li.innerText);
-        }
+        } document.getele
 
         const allHeadings = document.getElementsByTagName('h1');
         for(const h1 of allHeadings){
