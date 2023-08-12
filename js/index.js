@@ -1,2 +1,2 @@
 console.log('hello from js');
-console.log(document.body);
+// console.log(document.body);

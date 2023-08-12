@@ -5,25 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        li {
+            color: tomato;
+        }
+        #fruits-title {
+            color: black;
+        }
+        .visited {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere natus perferendis eius nihil iusto, vel rerum. Fuga odio laboriosam iusto tenetur velit nesciunt, qui natus, incidunt nihil cum sit ex.</p>
     </header>
     <main>
-        <h1>Tour of DOM</h1>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <ul>
-            <li>Another List Item 1</li>
-            <li>Another List Item 2</li>
-            <li>Another List Item 3</li>
-            <li>Another List Item 4</li>
-            <li>Another List Item 5</li>
-        </ul>
+        <section>
+            <h1>My Friends list</h1>
+            <ul>
+                <li>Asif</li>
+                <li>Arif</li>
+                <li>Kamrul</li>
+                <li>Rafi</li>
+                <li>Sabbir</li>
+                <li>Touhid</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Mango</li>
+                <li>Apple</li>
+                <li>Lichi</li>
+                <li>Guava</li>
+                <li>Banana</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li class="visited">Sundarban</li>
+                <li class="visited">Cox's Bazar</li>
+                <li class="visited">Sajek</li>
+                <li class="pending">Dinajpur</li>
+            </ul>
+        </section>
     </main>
     <footer>
 
@@ -31,14 +60,15 @@
 
     <script src="./js/index.js"></script>
     <script>
+        // getElementsByTagName
         const liCollections = document.getElementsByTagName('li');
         for(const li of liCollections) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         const allHeadings = document.getElementsByTagName('h1');
         for(const h1 of allHeadings){
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
         }
     </script>
 </body>
