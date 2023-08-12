@@ -60,6 +60,10 @@
 
     <script src="./js/index.js"></script>
     <script>
+        // getElementById
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'Fruits Title Changed by JS';
+
         // getElementsByTagName
         const liCollections = document.getElementsByTagName('li');
         for(const li of liCollections) {
