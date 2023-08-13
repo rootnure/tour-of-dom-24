@@ -28,10 +28,12 @@ element.classList.add('bolder'); // add a new class from HTML element
 // console.log(title);
 
 // innerText
-const HTMLContent = element.innerHTML; // return the raw html
-// console.log(HTMLContent);
 const textContent = element.innerText; // return only the visible text in browser
 // console.log(textContent);
+
+// innerHTML
+const HTMLContent = element.innerHTML; // return the raw html
+// console.log(HTMLContent);
 
 
 
