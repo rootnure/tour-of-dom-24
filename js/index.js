@@ -1,6 +1,33 @@
 // console.log('hello from js');
 // console.log(document.body);
 
+/* NodeList, HTMLCollection, parentNode, childNodes, createElement */
+
+const elementContainer = document.getElementById('frinds-list');
+
+// childNodes
+const elementNodeList = elementContainer.childNodes;
+// console.log(elementNodeList);
+// console.log(elementNodeList[3]);
+
+// parentNode
+const elementParent = elementContainer.parentNode;
+/* console.log(elementParent);
+console.log(elementParent.parentNode);
+console.log(elementParent.parentNode.parentNode);
+console.log(elementParent.parentNode.parentNode.parentNode);
+console.log(elementParent.parentNode.parentNode.parentNode.parentNode); */
+
+// createElement
+const li = document.createElement('li');
+li.innerText = 'My new friend';
+// console.log(li);
+
+// appendChild
+elementNodeList[3].appendChild(li);
+
+// ----------------------------------------------------------------
+
 /* HTML Manipulation */
 
 const element = document.getElementsByClassName('fruits-container')[0];
